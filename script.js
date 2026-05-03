@@ -13,11 +13,14 @@ const bars = document.querySelectorAll(".bar div");
 
 window.addEventListener("scroll", () => {
   bars.forEach(bar => {
-    bar.style.width = bar.getAttribute("style").split(":")[1];
+    const top = bar.getBoundingClientRect().top;
+    if (top < window.innerHeight - 50) {
+      bar.style.width = bar.getAttribute("data-width");
+    }
   });
 });
 
-// Particles background
+// Particles
 particlesJS("particles-js", {
   particles: {
     number: { value: 80 },
