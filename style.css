@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #111;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+  background: #1f1f1f;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.links a {
+  margin: 10px;
+  color: orange;
+  text-decoration: none;
+}
+
+section {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: orange;
+}
+
+.skills span {
+  display: inline-block;
+  background: #333;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.card {
+  background: #1f1f1f;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1f1f1f;
+}
