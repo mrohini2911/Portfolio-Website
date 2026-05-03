@@ -1,54 +1,80 @@
 body {
   margin: 0;
-  font-family: Arial;
-  background: #111;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
 }
 
-header {
-  text-align: center;
-  padding: 40px;
-  background: #1f1f1f;
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.2);
 }
 
-header h1 {
-  margin: 0;
-  font-size: 32px;
-}
-
-.links a {
-  margin: 10px;
-  color: orange;
+nav a {
+  margin: 0 10px;
+  color: white;
   text-decoration: none;
 }
 
-section {
-  padding: 30px;
-  max-width: 800px;
-  margin: auto;
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
 }
 
-h2 {
-  color: orange;
+.hero h1 {
+  font-size: 40px;
 }
 
-.skills span {
+.btn {
   display: inline-block;
-  background: #333;
-  padding: 8px 12px;
-  margin: 5px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
   border-radius: 5px;
+  margin-top: 20px;
+  text-decoration: none;
 }
 
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* CARD */
 .card {
-  background: #1f1f1f;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.2);
+}
+
+/* PROJECT */
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: yellow;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  background: #1f1f1f;
 }
